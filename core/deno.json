@@ -1,6 +1,7 @@
 {
   "imports": {
-    "std/": "https://deno.land/std@0.184.0/"
+    "std/": "https://deno.land/std@0.184.0/",
+    "lodash": "https://esm.sh/lodash@4.17.21"
   },
   "tasks": {
     "start": "deno run --watch --allow-net main.ts"

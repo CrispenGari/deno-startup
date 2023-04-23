@@ -11,6 +11,33 @@
     "https://deno.land/std@0.184.0/async/pool.ts": "fd082bd4aaf26445909889435a5c74334c017847842ec035739b4ae637ae8260",
     "https://deno.land/std@0.184.0/async/retry.ts": "dd19d93033d8eaddbfcb7654c0366e9d3b0a21448bdb06eba4a7d8a8cf936a92",
     "https://deno.land/std@0.184.0/async/tee.ts": "47e42d35f622650b02234d43803d0383a89eb4387e1b83b5a40106d18ae36757",
-    "https://deno.land/std@0.184.0/http/server.ts": "cbb17b594651215ba95c01a395700684e569c165a567e4e04bba327f41197433"
+    "https://deno.land/std@0.184.0/http/server.ts": "cbb17b594651215ba95c01a395700684e569c165a567e4e04bba327f41197433",
+    "https://esm.sh/lodash@4.17.21": "c5462e0924804c4bb08b66c460bdae1899c03f73ad4ae45e70693b45b729da45",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/array.d.ts": "458111fc89d11d2151277c822dfdc1a28fa5b6b2493cf942e37d4cd0a6ee5f22",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/collection.d.ts": "d70c026dd2eeaa974f430ea229230a1897fdb897dc74659deebe2afd4feeb08f",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/common.d.ts": "675e702f2032766a91eeadee64f51014c64688525da99dccd8178f0c599f13a8",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/date.d.ts": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/function.d.ts": "febf0b2de54781102b00f61653b21377390a048fbf5262718c91860d11ff34a6",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/lang.d.ts": "98f9d826db9cd99d27a01a59ee5f22863df00ccf1aaf43e1d7db80ebf716f7c3",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/math.d.ts": "0aaef8cded245bf5036a7a40b65622dd6c4da71f7a35343112edbe112b348a1e",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/number.d.ts": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/object.d.ts": "dcd91d3b697cb650b95db5471189b99815af5db2a1cd28760f91e0b12ede8ed5",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/seq.d.ts": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/string.d.ts": "3cf0d343c2276842a5b617f22ba82af6322c7cfe8bb52238ffc0c491a3c21019",
+    "https://esm.sh/v117/@types/lodash@4.14.194/common/util.d.ts": "df996e25faa505f85aeb294d15ebe61b399cf1d1e49959cdfaf2cc0815c203f9",
+    "https://esm.sh/v117/@types/lodash@4.14.194/index.d.ts": "f2eff8704452659641164876c1ef0df4174659ce7311b0665798ea3f556fa9ad",
+    "https://esm.sh/v117/@types/lodash@4.14.194/index~.d.ts": "f2eff8704452659641164876c1ef0df4174659ce7311b0665798ea3f556fa9ad",
+    "https://esm.sh/v117/lodash@4.17.21/deno/lodash.mjs": "a3c9a512bf51625ce4385b75b5be2ed9dd78290bbc0b28a3bb9fb2b918cd45e3"
+  },
+  "npm": {
+    "specifiers": {
+      "chalk@5": "chalk@5.2.0"
+    },
+    "packages": {
+      "chalk@5.2.0": {
+        "integrity": "sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==",
+        "dependencies": {}
+      }
+    }
   }
 }

@@ -131,3 +131,86 @@ Now that you have set the `imports` in your `deno.json` file you can change how 
 ```ts
 import { serve } from "std/http/server.ts";
 ```
+
+### Modules
+
+Deno allows us to create local and call remote modules. Let's create a local module called `math.ts` and add the following code in it:
+
+```ts
+export const add = (a: number, b: number): number => a + b;
+```
+
+To use this module in the `main.ts` this is how it is done:
+
+```ts
+import { add } from "./math.ts";
+console.log({ sum: add(2, 3) });
+```
+
+### Using Node Modules
+
+Deno supports node modules, let's try to use the module `chalk` in our main.ts file. Here is how we can use it:
+
+```ts
+import chalk from "npm:chalk@5";
+console.log(chalk.red("Hello there!!"));
+```
+
+Then you need to run:
+
+```shell
+deno run --allow-sys main.ts
+```
+
+We can pass the `--node-modules-dir` flag
+
+```shell
+deno run --node-modules-dir main.ts
+```
+
+> npm specifiers resolve npm packages to a central global npm cache. This works well in most cases and is ideal since it uses less space and doesn't require a node_modules directory.
+
+Deno also support using built in node modules by using the `node:` specifier. Here is how we can use native node modules in `deno`.
+
+```ts
+import { readFileSync } from "node:fs";
+console.log(readFileSync("deno.json", { encoding: "utf8" }));
+```
+
+### `package.json`
+
+Deno also allows us to resolve packages from `package.json` file.
+
+```json
+{
+  "name": "hello",
+  "description": "An example app created with Deno",
+  "type": "module",
+  "scripts": {
+    "dev": "deno run --allow-env --allow-sys  --allow-read main.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.2"
+  },
+  "devDependencies": {
+    "@types/node": "18.16.0"
+  }
+}
+```
+
+In the `main.ts` we will have the following code in it:
+
+```ts
+import { readFileSync } from "node:fs";
+console.log(readFileSync("deno.json", { encoding: "utf8" }));
+```
+
+Now to run the `main.ts` file we will run it using the `dev` script as follows:
+
+```shell
+deno task dev
+```
+
+### References.
+
+1. [Deno](https://deno.com/manual@v1.32.3/advanced/typescript/types)

@@ -1,0 +1,14 @@
+{
+  "name": "hello",
+  "description": "An example app created with Deno",
+  "type": "module",
+  "scripts": {
+    "dev": "deno run --allow-env --allow-sys  --allow-read main.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.2"
+  },
+  "devDependencies": {
+    "@types/node": "18.16.0"
+  }
+}
