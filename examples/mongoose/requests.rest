@@ -1,0 +1,12 @@
+http://localhost:3001/todos
+
+
+
+### Posting a todo
+
+POST http://localhost:3001/todo
+content-type: application/json
+
+{
+  "title": "there"
+}
