@@ -1,0 +1,17 @@
+http://localhost:3001/name
+
+
+
+### Posting a key
+
+POST http://localhost:3001/name
+content-type: application/json
+
+{
+  "value": "crispen"
+}
+
+### dELETING
+
+DELETE  http://localhost:3001/name
+content-type: application/json
