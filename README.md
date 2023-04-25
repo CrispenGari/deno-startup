@@ -24,7 +24,7 @@ To check if deno is installed run the following command:
 deno -V
 ```
 
-> Howdy!! if you get the deno version you have successifully install deno in your computer.
+> Howdy!! if you get the deno version you have successfully install deno in your computer.
 
 ### Setting Deno Environment.
 
@@ -37,3 +37,9 @@ I will be using `VSCode`to create my deno application so i need to install the `
 ```
 
 After that you can save the `settings.json` and your environment is already `set`.
+
+You can initialize the deno workspace by opening the command pallet in vscode by pressing `ctr` + `shift` + `P` and type the following
+
+```shell
+Deno: Initialize Workspace Configuration
+```
