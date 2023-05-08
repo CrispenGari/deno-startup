@@ -7,3 +7,19 @@ deno run --allow-read --allow-env --allow-net --allow-sys --allow-write npm:pris
 ```
 
 Next we are going to create a `deno.json` file and add the following code in it:
+
+
+```json
+{
+  "tasks": {
+    "start": "deno run --watch --allow-sys --allow-net --allow-read --allow-env index.ts",
+
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": ["deno.window"],
+    "strict": true
+  }
+}
+
+```
