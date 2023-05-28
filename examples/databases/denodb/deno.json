@@ -2,6 +2,11 @@
   "tasks": {
     "start": "deno run --watch --allow-sys --allow-net --allow-read --allow-env  src/index.ts"
   },
+  "scopes": {
+    "https://raw.githubusercontent.com/Zhomart/dex/": {
+      "https://deno.land/std/": "https://deno.land/std@0.177.0/"
+    }
+  },
   "compilerOptions": {
     "allowJs": true,
     "lib": ["deno.window"],

@@ -1,13 +1,2 @@
-import { Router } from "https://deno.land/x/oak@v12.4.0/mod.ts";
-
-export const todoRouter = new Router({
-  prefix: "/api/todo",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-});
-todoRouter
-  .get("/one/:id", (context) => {
-    context.response.body = "Hello world!";
-  })
-  .get("/all", (context) => {
-    context.response.body = [];
-  });
+export { default as authRouter } from "./auth/index.ts";
+export { default as todoRouter } from "./todo/index.ts";

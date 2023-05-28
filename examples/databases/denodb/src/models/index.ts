@@ -49,9 +49,9 @@ export class Todo extends Model {
       autoIncrement: true,
       allowNull: false,
     },
-    tittle: {
+    title: {
       type: DataTypes.STRING,
-      unique: true,
+      unique: false,
       allowNull: false,
     },
   };
